@@ -1,7 +1,6 @@
 function fetchBooks() {
   return fetch('https://anapioficeandfire.com/api/books')
   .then(resp => { //this is an inline function where resp is an argument
-    debugger
     console.log(resp)
     return resp.json()  //this returns a promise formatted in JSON.. think of this promise as data to be returned
   })
