@@ -1,5 +1,9 @@
 function fetchBooks() {
+  const targetURL = 'https://anapioficeandfire.com/api/books'
 
+  // fetch(targetURL).then(resp => resp.json()).then(json => console.log(json));
+  // renderBooks(json);
+  return fetch(targetURL).then(resp => resp.json()).then(json => renderBooks(json));
 }
 
 function renderBooks(json) {
